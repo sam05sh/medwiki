@@ -1,10 +1,12 @@
 <?php
 // config.php
+const password = process.env.PASSWORD;
+
 $db_host = 'localhost';
 $db_user = 'medwiki';
 $db_pass = '';
 $db_name = 'my_medwiki';
-$admin_password = 'passwordAdmin'; // CAMBIA QUESTA PASSWORD
+$admin_password = password; // CAMBIA QUESTA PASSWORD
 
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 if ($conn->connect_errno) { die("Errore DB: " . $conn->connect_error); }
