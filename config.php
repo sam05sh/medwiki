@@ -1,6 +1,6 @@
 <?php
 // config.php
-const password = process.env.PASSWORD;
+const password = process.env.PASSWORD_KEY;
 
 $db_host = 'localhost';
 $db_user = 'medwiki';
